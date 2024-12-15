@@ -1,24 +1,237 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .nav-part{
+    font-family: $font-rubik;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    .header {
+        padding-left: 4%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        nav {
-            ul {
-    
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 13px;
+
+        .nav-part {
+            gap: 20px;
+            display: flex;
+            align-items: center;
+
+            .logo {
+                a {
+                    img {
+                        border-right: 1px solid rgb(226, 226, 226);
+                        padding-right: 20px;
+                    }
+                }
+            }
+
+            nav {
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+
+                    li {
+                        padding: 20px 0;
+                        position: relative;
+
+                        .dropdown {
+                            display: block;
+                            // visibility: hidden;
+                            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                            background-color: white;
+                            position: absolute;
+                            width: 150px;
+                            top: 40px;
+                            transition: all .5s;
+                            opacity: 0;
+                            z-index: -99999;
+                            gap: 10px;
+
+                            li {
+                                padding: 12px;
+
+                                a {
+                                    &:hover {
+                                        color: $font-color-dark;
+                                    }
+                                }
+
+                                &:first-child {
+                                    margin-bottom: 8px;
+                                }
+                            }
+                        }
+
+
+                        &:hover .dropdown {
+                            opacity: 1;
+                            top: 100%;
+                            transition: all .5s;
+                            z-index: 999;
+                        }
+
+                        a {
+                            color: $font-color-dark;
+                            transition: .2s;
+
+                            &:hover {
+                                color: $aqua-color;
+
+                            }
+
+                            &:hover .dropdown {
+
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .contactParts {
+            gap: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .num {
+                i {
+                    font-size: 12px;
+                    color: $red-color;
+                }
+
+                span {
+                    color: $font-color-dark;
+                }
+            }
+
+            .socialMedia {
+                border-left: 1px solid rgb(226, 226, 226);
+                padding-left: 20px;
+
+                a {
+                    i {
+                        color: $font-color-light;
+                        margin-right: 20px;
+                        transition: .2s;
+
+                        &:hover {
+                            color: $red-color;
+                        }
+                    }
+                }
+            }
+
+            .menu {
+                display: none;
+            }
+
+            .search {
+                a {
+                    i {
+                        color: white;
+                        padding: 40px;
+                        background-color: $red-color;
+                    }
+                }
             }
         }
     }
-    .contactParts{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+
+    .media-part {
+        display: none;
+        justify-content: end;
+        background-color: rgb(75, 75, 75);
+        padding: 13px 20px;
+
+        .menu {
+            border-radius: 10px;
+            background-color: black;
+            padding: 10px 15px;
+
+            span,
+            i {
+                color: white;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1200px) {
+    header {
+        .header {
+            padding-left: 2%;
+
+            .nav-part {
+                gap: 15px;
+
+                .logo {
+                    a {
+                        img {
+                            border: none;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+
+            .contactParts {
+                gap: 5px;
+
+                .socialMedia {
+                    padding: 0;
+                    border: none;
+
+                    a {
+                        i {
+                            margin: 5px;
+                        }
+                    }
+                }
+
+                .search {
+                    a {
+                        i {
+                            padding: 30px 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:991px) {
+    header {
+        .header {
+            padding: 0 20px;
+
+            .nav-part {
+                nav {
+                    display: none;
+                }
+            }
+
+            .contactParts {
+                .num {
+                    display: none;
+                }
+
+                .socialMedia {
+                    display: none;
+                }
+
+                .menu {
+                    margin-right: 40px;
+                    color: $font-color-dark;
+                    display: block !important;
+                }
+            }
+        }
+
+        .media-part {
+            display: flex;
+        }
     }
 }
