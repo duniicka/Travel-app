@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav-part nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+}
+header .contactParts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}/*# sourceMappingURL=main.css.map */

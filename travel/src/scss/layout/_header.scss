@@ -1,0 +1,24 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav-part{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        nav {
+            ul {
+    
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 13px;
+            }
+        }
+    }
+    .contactParts{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
