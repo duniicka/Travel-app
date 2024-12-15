@@ -1,3 +1,122 @@
+@font-face {
+  font-family: "Nothing You Could Do";
+  src: url("../assets/fonts/NothingYouCouldDo.woff2") format("woff2"), url("../assets/fonts/NothingYouCouldDo.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-LightItalic.woff2") format("woff2"), url("../assets/fonts/Rubik-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-Light.woff2") format("woff2"), url("../assets/fonts/Rubik-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-Black.woff2") format("woff2"), url("../assets/fonts/Rubik-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-BoldItalic.woff2") format("woff2"), url("../assets/fonts/Rubik-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-BlackItalic.woff2") format("woff2"), url("../assets/fonts/Rubik-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-Bold.woff2") format("woff2"), url("../assets/fonts/Rubik-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-Italic.woff2") format("woff2"), url("../assets/fonts/Rubik-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-ExtraBold.woff2") format("woff2"), url("../assets/fonts/Rubik-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-ExtraBoldItalic.woff2") format("woff2"), url("../assets/fonts/Rubik-ExtraBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-LightItalic.woff2") format("woff2"), url("../assets/fonts/Rubik-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-Light.woff2") format("woff2"), url("../assets/fonts/Rubik-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-Medium.woff2") format("woff2"), url("../assets/fonts/Rubik-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-Regular.woff2") format("woff2"), url("../assets/fonts/Rubik-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-MediumItalic.woff2") format("woff2"), url("../assets/fonts/Rubik-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-SemiBold.woff2") format("woff2"), url("../assets/fonts/Rubik-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-SemiBoldItalic.woff2") format("woff2"), url("../assets/fonts/Rubik-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
 * {
   padding: 0;
   margin: 0;
@@ -7,23 +126,164 @@
 }
 
 header {
+  font-family: "rubik";
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+header .header {
+  padding-left: 4%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .nav-part {
+header .header .nav-part {
+  gap: 20px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
-header .nav-part nav ul {
+header .header .nav-part .logo a img {
+  border-right: 1px solid rgb(226, 226, 226);
+  padding-right: 20px;
+}
+header .header .nav-part nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 13px;
+  gap: 20px;
 }
-header .contactParts {
+header .header .nav-part nav ul li {
+  padding: 20px 0;
+  position: relative;
+}
+header .header .nav-part nav ul li .dropdown {
+  display: block;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: white;
+  position: absolute;
+  width: 150px;
+  top: 40px;
+  transition: all 0.5s;
+  opacity: 0;
+  z-index: -99999;
+  gap: 10px;
+}
+header .header .nav-part nav ul li .dropdown li {
+  padding: 12px;
+}
+header .header .nav-part nav ul li .dropdown li a:hover {
+  color: rgb(4, 14, 39);
+}
+header .header .nav-part nav ul li .dropdown li:first-child {
+  margin-bottom: 8px;
+}
+header .header .nav-part nav ul li:hover .dropdown {
+  opacity: 1;
+  top: 100%;
+  transition: all 0.5s;
+  z-index: 999;
+}
+header .header .nav-part nav ul li a {
+  color: rgb(4, 14, 39);
+  transition: 0.2s;
+}
+header .header .nav-part nav ul li a:hover {
+  color: rgb(32, 198, 182);
+}
+header .header .nav-part nav ul li a:hover .dropdown {
+  display: block;
+}
+header .header .contactParts {
+  gap: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+header .header .contactParts .num i {
+  font-size: 12px;
+  color: rgb(255, 74, 83);
+}
+header .header .contactParts .num span {
+  color: rgb(4, 14, 39);
+}
+header .header .contactParts .socialMedia {
+  border-left: 1px solid rgb(226, 226, 226);
+  padding-left: 20px;
+}
+header .header .contactParts .socialMedia a i {
+  color: rgb(122, 131, 151);
+  margin-right: 20px;
+  transition: 0.2s;
+}
+header .header .contactParts .socialMedia a i:hover {
+  color: rgb(255, 74, 83);
+}
+header .header .contactParts .menu {
+  display: none;
+}
+header .header .contactParts .search a i {
+  color: white;
+  padding: 40px;
+  background-color: rgb(255, 74, 83);
+}
+header .media-part {
+  display: none;
+  justify-content: end;
+  background-color: rgb(75, 75, 75);
+  padding: 13px 20px;
+}
+header .media-part .menu {
+  border-radius: 10px;
+  background-color: black;
+  padding: 10px 15px;
+}
+header .media-part .menu span,
+header .media-part .menu i {
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  header .header {
+    padding-left: 2%;
+  }
+  header .header .nav-part {
+    gap: 15px;
+  }
+  header .header .nav-part .logo a img {
+    border: none;
+    padding: 0;
+  }
+  header .header .contactParts {
+    gap: 5px;
+  }
+  header .header .contactParts .socialMedia {
+    padding: 0;
+    border: none;
+  }
+  header .header .contactParts .socialMedia a i {
+    margin: 5px;
+  }
+  header .header .contactParts .search a i {
+    padding: 30px 25px;
+  }
+}
+@media (max-width: 991px) {
+  header .header {
+    padding: 0 20px;
+  }
+  header .header .nav-part nav {
+    display: none;
+  }
+  header .header .contactParts .num {
+    display: none;
+  }
+  header .header .contactParts .socialMedia {
+    display: none;
+  }
+  header .header .contactParts .menu {
+    margin-right: 40px;
+    color: rgb(4, 14, 39);
+    display: block !important;
+  }
+  header .media-part {
+    display: flex;
+  }
 }/*# sourceMappingURL=main.css.map */
