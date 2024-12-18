@@ -1,0 +1,363 @@
+main {
+    .destination {
+        background-color: black;
+        height: 60vh;
+        position: relative;
+
+        img {
+            opacity: .8;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content-destination {
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+            h1 {
+                color: white;
+                font-weight: 400;
+                font-size: 80px;
+                font-family: $font-could-do;
+            }
+
+            p {
+                color: white;
+                font-family: $font-rubik;
+            }
+        }
+    }
+
+    .popular-places-destination {
+        font-family: $font-rubik;
+        background-color: rgb(248, 250, 253);
+        padding: 8rem 11%;
+        width: 100%;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 60px;
+
+            .filter {
+                width: 40%;
+
+                h4 {
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+
+                form {
+                    margin-top: 20px;
+                    border: 1px solid rgba(128, 128, 128, 0.327);
+                    width: 100%;
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    select {
+                        padding: 15px;
+                        width: 100%;
+                        color: $font-color-light;
+                        border: 1px solid rgba(128, 128, 128, 0.327);
+                        background-color: transparent;
+                    }
+
+                    h6 {
+                        font-weight: 400;
+                        font-size: 17px;
+
+                        &::after {
+                            content: " ";
+                            display: block;
+                            width: 100%;
+                            height: 2px;
+                            margin-top: 20px;
+                            background-color: $red-color;
+                        }
+                    }
+
+                    span {
+                        color: $font-color-light;
+                    }
+
+                    a {
+                        text-align: center;
+                        width: 100%;
+                        background-color: $red-color;
+                        padding: 20px;
+                        color: white;
+                        @include hover-btn($red-color)
+                    }
+                }
+            }
+
+            .content-part-places {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 50px;
+
+                h2 {
+                    color: $font-color-dark;
+                    font-size: 35px;
+                    font-weight: 400;
+                }
+
+                p {
+                    padding: 20px 0;
+                    color: $font-color-light;
+                }
+            }
+
+            .img-part-places {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                .img-cards {
+                    display: grid;
+                    gap: 30px;
+                    grid-template-columns: repeat(2, 1fr);
+                    justify-content: center;
+                    align-items: center;
+                    .img-cards-places {
+                        transition: .3s;
+                        border-radius: 7px;
+                        overflow: hidden;
+
+                        .images-places {
+                            background-color: white;
+                            position: relative;
+
+                            img {
+                                height: 100%;
+                                width: 100%;
+                                object-fit: cover;
+                            }
+
+                            a {
+                                position: absolute;
+                                top: 10px;
+                                left: 10px;
+                                color: white;
+                                font-size: 13px;
+                                background-color: $aqua-color;
+                                padding: 8px 15px;
+                                border-radius: 20px;
+                                transition: .3s;
+                            }
+                        }
+
+                        .content-places {
+                            background-color: white;
+                            padding: 20px 20px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+
+                            .header-content-places {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 10px;
+
+                                a {
+                                    transition: .3s;
+                                    color: $font-color-dark;
+                                    font-size: 20px;
+                                }
+
+                                p {
+                                    font-size: 12px;
+                                    color: $font-color-light;
+                                }
+                            }
+
+                            .bottom-content-places {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+
+                                .rate {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    gap: 5px;
+
+                                    span {
+                                        display: flex;
+                                        gap: 0;
+
+                                        i {
+                                            color: rgb(253, 174, 92);
+                                            margin: 0;
+                                            padding: 0;
+                                            font-size: 10px;
+                                        }
+                                    }
+
+                                    a {
+                                        font-size: 13px;
+                                        color: $font-color-light;
+                                    }
+                                }
+
+                                .remaining-time {
+                                    span {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        gap: 10px;
+                                        font-size: 12px;
+                                        color: $font-color-light;
+
+                                        a {
+                                            color: $font-color-light;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+                            .images-places {
+                                a {
+                                    background-color: $red-color;
+                                }
+                            }
+
+                            .content-places {
+                                .header-content-places {
+                                    a {
+                                        color: $red-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .more-places {
+                    width: 40%;
+                    text-align: center;
+                    margin: auto;
+                    border-radius: 3px;
+                    padding: 17px;
+                    background-color: $red-color;
+                    color: white;
+                    @include hover-btn ($red-color);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1200px) {
+    main {
+        .popular-places-destination {
+            .container {
+                .filter {
+                    width: 50%;
+                }
+
+                .img-part-places {
+                    .img-cards {
+                        .img-cards-places {
+                            .content-places {
+                                .header-content-places{
+                                    a{
+                                        font-size: 17px;
+                                    }
+                                }
+                                .bottom-content-places {
+                                    .rate {
+                                        span {
+                                            i {
+                                                font-size: 8px;
+                                            }
+                                        }
+
+                                        a {
+                                            font-size: 10px;
+                                        }
+                                    }
+
+                                    .remaining-time {
+                                        span {
+                                            gap: 2px;
+
+                                            i {
+                                                font-size: 8px;
+                                            }
+
+                                            font-size: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:991px) {
+    main {
+        .popular-places-destination {
+            .container {
+                flex-direction: column;
+                .filter{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    main{
+        .popular-places-destination{
+            width: 100%;
+            .container{
+                .img-part-places{
+                    .img-cards{
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    main {
+        .destination {
+            .content-destination {
+                h1 {
+                    font-size: 50px;
+                }
+            }
+        }
+
+        .popular-places-destination{
+            .container{
+                .img-part-places{
+                    .more-places{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+
+    }
+}

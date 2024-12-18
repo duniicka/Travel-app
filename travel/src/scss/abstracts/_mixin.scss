@@ -14,6 +14,20 @@
     }
 }
 
+@mixin hover-red {
+    transition: .3s;
+    &:hover {
+        color: $red-color;
+    }
+}
+
+@mixin hover-aqua{
+    transition: .3s;
+    &:hover{
+        color: $aqua-color;
+    }
+}
+
 @mixin form {
     color-scheme: dark;
     background-color: transparent;
@@ -21,4 +35,3 @@
     outline: none;
     padding: 16px 30px;
 }
-
