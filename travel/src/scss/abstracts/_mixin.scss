@@ -1,37 +1,24 @@
 @mixin hover-btn($color) {
+    transition: .3s;
+
     @if $color==$aqua-color {
-        @keyframes btn-hover {
-            0%{
-                background-color: $color;
-            }
-
-            50%{
-                background-color: gray;
-            }
-            100%{
-                background-color: $red-color;
-            }
+        &:hover {
+            background-color: $red-color;
         }
     }
-    @else{
-        @keyframes btn-hover{
-            0%{
-                background-color: $color;
-            }
 
-            50%{
-                background-color: gray;
-            }
-            100%{
-                background-color: $aqua-color;
-            }
+    @else {
+        &:hover {
+            background-color: $aqua-color;
         }
     }
-    animation-name: btn-hover;
-    animation-duration: .3s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    animation-direction: alternate;
-    animation-fill-mode: forwards;
+}
+
+@mixin form {
+    color-scheme: dark;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.616);
+    outline: none;
+    padding: 16px 30px;
 }
 
