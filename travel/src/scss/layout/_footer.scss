@@ -1,0 +1,200 @@
+footer {
+    padding: 5rem 11%;
+    background-color: rgb(4, 14, 39);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $font-rubik;
+    height: 60vh;
+
+    .travel-footer {
+        height: 100%;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .address-footer {
+            line-height: 25px;
+
+            p {
+                color: $font-color-light;
+                font-size: 13px;
+            }
+
+            .address-links {
+                a {
+                    font-size: 13px;
+                    color: $font-color-light;
+                }
+            }
+        }
+
+        .contact-footer {
+            display: flex;
+            justify-content: start;
+            gap: 20px;
+
+            a {
+                font-size: 13px;
+                color: $font-color-light;
+                @include hover-red;
+            }
+        }
+    }
+
+    .company-footer {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 30px;
+
+        h2 {
+            font-weight: 400;
+            color: white;
+            font-size: 20px;
+        }
+
+        ul {
+            li {
+                line-height: 25px;
+
+                a {
+                    font-size: 13px;
+                    color: $font-color-light;
+                    @include hover-red;
+                }
+            }
+        }
+    }
+
+    .popular-destination-footer {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 30px;
+
+        h2 {
+            font-weight: 400;
+            color: white;
+            font-size: 20px;
+        }
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: space-between;
+
+            li {
+                line-height: 25px;
+
+                a {
+                    font-size: 13px;
+                    color: $font-color-light;
+                    @include hover-red;
+                }
+            }
+        }
+
+    }
+
+    .instagram-footer {
+        height: 100%;
+        gap: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+
+        h2 {
+            font-size: 20px;
+            color: white;
+            font-weight: 400;
+        }
+
+        .img-part-instagram {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 17px;
+
+            .inst-images-footer {
+                border-radius: 7px;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+
+    footer {
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 70px;
+        column-gap: 100px;
+        justify-content: space-between;
+        align-items: center;
+
+        .travel-footer {
+            width: 80%;
+            gap: 20px;
+        }
+
+        .instagram-footer {
+            .img-part-instagram {
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    }
+
+}
+
+@media (max-width:768px) {
+    footer {
+        row-gap: 50px;
+        column-gap: 70px;
+
+        .instagram-footer {
+            .img-part-instagram {
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    footer {
+        grid-template-columns: repeat(1, 1fr);
+
+        .travel-footer {
+            width: 100%;
+        }
+
+        .company-footer {
+            width: 100%;
+        }
+
+        .popular-destination-footer {
+            width: 100%;
+        }
+
+        .instagram-footer {
+            width: 100%;
+
+            .img-part-instagram {
+                gap: 10px;
+            }
+        }
+    }
+}

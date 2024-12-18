@@ -73,13 +73,7 @@ header {
 
                         a {
                             color: $font-color-dark;
-                            transition: .2s;
-
-                            &:hover {
-                                color: $aqua-color;
-
-                            }
-
+                            @include hover-aqua;
                             &:hover .dropdown {
 
                                 display: block;
@@ -115,11 +109,7 @@ header {
                     i {
                         color: $font-color-light;
                         margin-right: 20px;
-                        transition: .2s;
-
-                        &:hover {
-                            color: $red-color;
-                        }
+                        @include hover-red;
                     }
                 }
             }
