@@ -1,0 +1,15 @@
+main{
+    .blog-section{
+        .container{
+            .blog-item{
+                .content-part-blog{
+                    .header-content-singleBlog{
+                        color: $font-color-dark;
+                        font-weight: 600;
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}

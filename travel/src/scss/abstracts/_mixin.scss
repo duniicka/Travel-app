@@ -15,15 +15,17 @@
 }
 
 @mixin hover-red {
-    transition: .3s;
+    transition: 0.3s;
+
     &:hover {
         color: $red-color;
     }
 }
 
-@mixin hover-aqua{
+@mixin hover-aqua {
     transition: .3s;
-    &:hover{
+
+    &:hover {
         color: $aqua-color;
     }
 }
@@ -34,4 +36,29 @@
     border: 1px solid rgba(255, 255, 255, 0.616);
     outline: none;
     padding: 16px 30px;
+}
+
+@mixin video-animation {
+    @keyframes i-animation {
+        0% {
+            background-color: $aqua-color;
+            border: 1px solid $aqua-color;
+            padding: 0;
+        }
+
+        40% {
+            padding: 12px;
+            background-color: rgba(32, 198, 181, 0.526);
+            border: 1px solid rgba(32, 198, 182, 0.400);
+        }
+        100%{
+            padding: 30px;
+            border: 1px solid rgba(32, 198, 182, 0);
+            background-color: rgba(32, 198, 182, 0);
+        }
+    }
+    animation-name: i-animation;
+    animation-timing-function: linear;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
 }

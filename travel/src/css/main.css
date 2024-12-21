@@ -133,708 +133,6 @@
   background-color: rgb(56, 60, 65);
 }
 
-main {
-  padding-top: 90px;
-}
-main .country {
-  position: relative;
-  width: 100%;
-  height: 86vh;
-  background: black;
-}
-main .country img {
-  opacity: 0.8;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-main .country .slide {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-main .country .slide .country-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-main .country .slide .country-content h1 {
-  color: white;
-  font-size: 150px;
-  font-weight: 100;
-  font-family: "Nothing You Could Do";
-}
-main .country .slide .country-content p {
-  color: white;
-  font-weight: 400;
-  font-family: "rubik";
-}
-main .country .slide .country-content a {
-  font-family: "rubik";
-  color: white;
-  margin-top: 40px;
-  padding: 15px 30px;
-  background-color: rgb(32, 198, 182);
-  border-radius: 3px;
-  transition: 0.3s;
-}
-main .country .slide .country-content a:hover {
-  background-color: rgb(255, 74, 83);
-}
-main .country .slide .slideIcon {
-  cursor: pointer;
-  padding: 40px 20px;
-  background-color: rgba(255, 255, 255, 0.295);
-  transition: 0.2s;
-}
-main .country .slide .slideIcon i {
-  transition: 0.2s;
-  color: white;
-}
-main .country .slide .slideIcon:hover {
-  background-color: #fff;
-}
-main .country .slide .slideIcon:hover i {
-  color: rgb(4, 14, 39);
-}
-main .wantToGo {
-  padding: 40px 11%;
-  background-color: rgb(4, 14, 39);
-  font-family: "rubik";
-}
-main .wantToGo .container form {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-main .wantToGo .container form h2 {
-  font-weight: 300;
-  color: white;
-}
-main .wantToGo .container form input {
-  color-scheme: dark;
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.616);
-  outline: none;
-  padding: 16px 30px;
-}
-main .wantToGo .container form input::-moz-placeholder {
-  color: white;
-}
-main .wantToGo .container form input::placeholder {
-  color: white;
-}
-main .wantToGo .container form select {
-  color-scheme: dark;
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.616);
-  outline: none;
-  padding: 16px 30px;
-}
-main .wantToGo .container form select option {
-  color: rgb(4, 14, 39);
-}
-main .wantToGo .container form button {
-  border: none;
-  padding: 15px 30px;
-  border-radius: 3px;
-  background-color: rgb(255, 74, 83);
-  color: white;
-  cursor: pointer;
-}
-main .wantToGo .container form button:hover {
-  transition: 0.3s;
-}
-main .wantToGo .container form button:hover:hover {
-  background-color: rgb(32, 198, 182);
-}
-main .destination-home {
-  padding: 10rem 11%;
-  font-family: "rubik";
-}
-main .destination-home .content-part-destination {
-  text-align: center;
-}
-main .destination-home .content-part-destination h2 {
-  font-size: 40px;
-  font-weight: 400;
-}
-main .destination-home .content-part-destination p {
-  color: rgb(122, 131, 151);
-  padding: 3rem 150px;
-}
-main .destination-home .img-part-destination {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
-}
-main .destination-home .img-part-destination .images-destination {
-  position: relative;
-}
-main .destination-home .img-part-destination .images-destination .background-black {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  bottom: 0;
-  border-radius: 6px;
-  overflow: hidden;
-  transition: 0.2s;
-  background-color: black;
-}
-main .destination-home .img-part-destination .images-destination .background-black img {
-  opacity: 0.6;
-  width: 100%;
-  height: 100%;
-}
-main .destination-home .img-part-destination .images-destination .background-black span {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  transition: 0.2s;
-  color: white;
-}
-main .destination-home .img-part-destination .images-destination .background-black span a {
-  color: white;
-  font-size: 12px;
-  background-color: rgb(32, 198, 182);
-  padding: 5px 10px;
-  transition: 0.2s;
-  border-radius: 20px;
-}
-main .destination-home .img-part-destination .images-destination:hover .background-black {
-  bottom: 10px;
-}
-main .destination-home .img-part-destination .images-destination:hover span {
-  color: rgb(255, 74, 83);
-}
-main .destination-home .img-part-destination .images-destination:hover span a {
-  background-color: rgb(255, 74, 83);
-}
-main .subscribe {
-  width: 100%;
-  height: 30vh;
-  background-color: rgb(14, 21, 36);
-  font-family: "rubik";
-  position: relative;
-}
-main .subscribe img {
-  opacity: 0.3;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-main .subscribe .content {
-  width: 100%;
-  gap: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-main .subscribe .content .subscribe-header {
-  width: 30%;
-}
-main .subscribe .content .subscribe-header h2 {
-  font-weight: 400;
-  color: white;
-}
-main .subscribe .content .subscribe-header p {
-  color: rgb(122, 131, 151);
-}
-main .subscribe .content .subscribe-input {
-  display: flex;
-  gap: 10px;
-}
-main .subscribe .content .subscribe-input input {
-  border: none;
-  outline: none;
-  padding: 1rem 11rem 1rem 10px;
-  border-radius: 4px;
-}
-main .subscribe .content .subscribe-input input::-moz-placeholder {
-  color: rgb(122, 131, 151);
-}
-main .subscribe .content .subscribe-input input::placeholder {
-  color: rgb(122, 131, 151);
-}
-main .subscribe .content .subscribe-input button {
-  cursor: pointer;
-  border-radius: 4px;
-  color: white;
-  border: none;
-  padding: 1rem 30px;
-  background-color: rgb(255, 74, 83);
-  transition: 0.3s;
-}
-main .subscribe .content .subscribe-input button:hover {
-  background-color: rgb(32, 198, 182);
-}
-main .popular-places {
-  font-family: "rubik";
-  background-color: rgb(248, 250, 253);
-  padding: 8rem 11%;
-}
-main .popular-places .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-}
-main .popular-places .container .content-part-places {
-  width: 50%;
-  text-align: center;
-}
-main .popular-places .container .content-part-places h2 {
-  color: rgb(4, 14, 39);
-  font-size: 35px;
-  font-weight: 400;
-}
-main .popular-places .container .content-part-places p {
-  padding: 20px 0;
-  color: rgb(122, 131, 151);
-}
-main .popular-places .container .img-part-places {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(3, 1fr);
-}
-main .popular-places .container .img-part-places .img-cards-places {
-  transition: 0.3s;
-  border-radius: 7px;
-  overflow: hidden;
-}
-main .popular-places .container .img-part-places .img-cards-places .images-places {
-  background-color: white;
-  position: relative;
-}
-main .popular-places .container .img-part-places .img-cards-places .images-places img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-main .popular-places .container .img-part-places .img-cards-places .images-places a {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  color: white;
-  font-size: 13px;
-  background-color: rgb(32, 198, 182);
-  padding: 8px 15px;
-  border-radius: 20px;
-  transition: 0.3s;
-}
-main .popular-places .container .img-part-places .img-cards-places .content-places {
-  background-color: white;
-  padding: 20px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-main .popular-places .container .img-part-places .img-cards-places .content-places .header-content-places {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-main .popular-places .container .img-part-places .img-cards-places .content-places .header-content-places a {
-  transition: 0.3s;
-  color: rgb(4, 14, 39);
-  font-size: 20px;
-}
-main .popular-places .container .img-part-places .img-cards-places .content-places .header-content-places p {
-  font-size: 12px;
-  color: rgb(122, 131, 151);
-}
-main .popular-places .container .img-part-places .img-cards-places .content-places .bottom-content-places {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-main .popular-places .container .img-part-places .img-cards-places .content-places .bottom-content-places .rate {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-}
-main .popular-places .container .img-part-places .img-cards-places .content-places .bottom-content-places .rate span {
-  display: flex;
-  gap: 0;
-}
-main .popular-places .container .img-part-places .img-cards-places .content-places .bottom-content-places .rate span i {
-  color: rgb(253, 174, 92);
-  margin: 0;
-  padding: 0;
-  font-size: 10px;
-}
-main .popular-places .container .img-part-places .img-cards-places .content-places .bottom-content-places .rate a {
-  font-size: 13px;
-  color: rgb(122, 131, 151);
-}
-main .popular-places .container .img-part-places .img-cards-places .content-places .bottom-content-places .remaining-time span {
-  display: flex;
-  gap: 10px;
-  font-size: 12px;
-  color: rgb(122, 131, 151);
-}
-main .popular-places .container .img-part-places .img-cards-places .content-places .bottom-content-places .remaining-time span a {
-  color: rgb(122, 131, 151);
-}
-main .popular-places .container .img-part-places .img-cards-places:hover {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-}
-main .popular-places .container .img-part-places .img-cards-places:hover .images-places a {
-  background-color: rgb(255, 74, 83);
-}
-main .popular-places .container .img-part-places .img-cards-places:hover .content-places .header-content-places a {
-  color: rgb(255, 74, 83);
-}
-main .video {
-  background-color: black;
-  height: 80vh;
-  position: relative;
-}
-main .video img {
-  opacity: 0.8;
-  width: 100%;
-  height: 100%;
-}
-main .video .content-video {
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-main .video .content-video h1 {
-  color: white;
-  font-weight: 400;
-  font-size: 80px;
-  font-family: "Nothing You Could Do";
-}
-main .video .content-video i {
-  font-size: 15px;
-  padding: 30px 32px;
-  color: white;
-  background-color: rgb(32, 198, 182);
-  border-radius: 50%;
-}
-main .travel-part {
-  padding: 50px 11%;
-  font-family: "rubik";
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-}
-main .travel-part div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-main .travel-part div i {
-  font-size: 50px;
-  color: rgb(255, 74, 83);
-}
-main .travel-part div h4 {
-  font-weight: 400;
-  font-size: 20px;
-  color: rgb(4, 14, 39);
-}
-main .travel-part div p {
-  color: rgb(122, 131, 151);
-  font-weight: 300;
-  font-size: 15px;
-  text-align: center;
-}
-main .author {
-  font-family: "rubik";
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10rem 0;
-  background-color: rgb(248, 250, 253);
-  text-align: center;
-  gap: 30px;
-}
-main .author .author-logo {
-  position: relative;
-}
-main .author .author-logo .author-img {
-  overflow: hidden;
-  border-end-end-radius: 50%;
-}
-main .author .author-logo .author-img img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-main .author .author-logo i {
-  color: white;
-  background-color: rgb(32, 198, 182);
-  padding: 15px 16px;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 1px;
-  left: 70px;
-}
-main .author .author-content {
-  width: 45%;
-  line-height: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-main .author .author-content p {
-  color: rgb(4, 14, 39);
-}
-main .author .author-content h4 {
-  font-weight: 400;
-  color: rgb(122, 131, 151);
-}
-main .author .author-content .span {
-  display: flex;
-  gap: 10px;
-}
-main .author .author-content .span span {
-  border-radius: 50%;
-  padding: 6px;
-  background-color: rgb(122, 131, 151);
-}
-main .author .author-content .span span:nth-child(2) {
-  background-color: rgb(255, 74, 83);
-}
-main .recent-trips {
-  padding: 10rem 11%;
-  font-family: "rubik";
-}
-main .recent-trips .container {
-  display: flex;
-  flex-direction: column;
-  gap: 70px;
-}
-main .recent-trips .container h1 {
-  font-size: 40px;
-  text-align: center;
-  font-weight: 400;
-}
-main .recent-trips .container .recent-trips-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
-}
-main .recent-trips .container .recent-trips-cards .trips-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  gap: 10px;
-}
-main .recent-trips .container .recent-trips-cards .trips-card .trip-img {
-  width: 100%;
-  overflow: hidden;
-  border-radius: 7px 7px 0 0;
-}
-main .recent-trips .container .recent-trips-cards .trips-card .trip-img img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-main .recent-trips .container .recent-trips-cards .trips-card .trip-content {
-  width: 100%;
-  padding-right: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  gap: 10px;
-}
-main .recent-trips .container .recent-trips-cards .trips-card .trip-content span {
-  font-size: 13px;
-  color: rgb(122, 131, 151);
-}
-main .recent-trips .container .recent-trips-cards .trips-card .trip-content a {
-  font-size: 20px;
-  color: rgb(4, 14, 39);
-  transition: 0.3s;
-}
-main .recent-trips .container .recent-trips-cards .trips-card:hover .trip-content a {
-  color: rgb(255, 74, 83);
-}
-
-@media (max-width: 1200px) {
-  main {
-    padding-top: 70px;
-  }
-  main .country .slide .country-content h1 {
-    font-size: 100px;
-  }
-  main .wantToGo .container form {
-    gap: 2px;
-  }
-  main .wantToGo .container form h2 {
-    font-size: 20px;
-  }
-  main .wantToGo .container form input {
-    padding: 10px 20px;
-  }
-  main .wantToGo .container form select {
-    padding: 10px 20px;
-  }
-  main .wantToGo .container form button {
-    padding: 10px 20px;
-  }
-}
-@media (max-width: 991px) {
-  main {
-    padding-top: 140px;
-  }
-  main .country .slide .country-content h1 {
-    font-size: 80px;
-  }
-  main .wantToGo .container form {
-    flex-direction: column;
-    gap: 30px;
-  }
-  main .wantToGo .container form h2 {
-    font-size: 30px;
-  }
-  main .wantToGo .container form input {
-    width: 100%;
-    padding: 10px 20px;
-  }
-  main .wantToGo .container form select {
-    width: 100%;
-    padding: 10px 20px;
-  }
-  main .wantToGo .container form button {
-    width: 100%;
-    padding: 10px 20px;
-  }
-  main .destination .content-part-destination p {
-    padding: 2rem 100px;
-  }
-  main .destination .img-part-destination {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  main .subscribe .content {
-    padding: 0 11%;
-    flex-direction: column;
-    align-items: start;
-  }
-  main .subscribe .content .subscribe-header {
-    width: 100%;
-  }
-  main .popular-places .container .img-part-places {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  main .travel-part {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  main .recent-trips .container .recent-trips-cards {
-    grid-template-columns: repeat(1, 1fr);
-    justify-content: center;
-    align-items: center;
-  }
-  main .recent-trips .container .recent-trips-cards .trips-card .trip-content {
-    padding: 0;
-  }
-}
-@media (max-width: 768px) {
-  main {
-    padding-top: 140px;
-  }
-  main .country .slide {
-    display: block;
-  }
-  main .country .slide .country-content {
-    padding: 20px;
-  }
-  main .country .slide .country-content h1 {
-    font-size: 55px;
-  }
-  main .country .slide .slideIcon {
-    display: none;
-  }
-  main .wantToGo .container form {
-    flex-direction: column;
-  }
-  main .wantToGo .container form h2 {
-    font-size: 25px;
-  }
-  main .destination .content-part-destination p {
-    padding: 1rem 30px;
-  }
-  main .subscribe {
-    width: 100%;
-    height: 50vh;
-  }
-  main .subscribe .content .subscribe-input {
-    width: 100%;
-    flex-direction: column;
-  }
-  main .popular-places .container .content-part-places {
-    width: 100%;
-  }
-  main .popular-places .container .img-part-places .img-cards-places .content-places .header-content-places a {
-    font-size: 16px;
-  }
-  main .popular-places .container .img-part-places .img-cards-places .content-places .header-content-places p {
-    font-size: 10;
-  }
-  main .popular-places .container .img-part-places .img-cards-places .content-places .bottom-content-places {
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    gap: 10px;
-  }
-}
-@media (max-width: 576px) {
-  main .destination .content-part-destination p {
-    padding: 1rem 0px;
-  }
-  main .destination .img-part-destination {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  main .popular-places .container .img-part-places {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  main .video .content-video h1 {
-    font-size: 50px;
-  }
-  main .author {
-    padding: 5rem 11%;
-  }
-  main .author .author-content {
-    width: 100%;
-  }
-  main .recent-trips {
-    padding: 5rem 11%;
-  }
-}
 main .about {
   background-color: black;
   height: 60vh;
@@ -1205,6 +503,1210 @@ main .popular-places-destination .container .img-part-places .more-places:hover 
   }
   main .popular-places-destination .container .img-part-places .more-places {
     width: 50%;
+  }
+}
+main .contact {
+  background-color: black;
+  height: 60vh;
+  position: relative;
+}
+main .contact img {
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .contact .content-contact {
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+main .contact .content-contact h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 80px;
+  font-family: "Nothing You Could Do";
+}
+main .contact .content-contact p {
+  color: white;
+  font-family: "rubik";
+}
+main .contact-section {
+  font-family: "rubik";
+  padding: 10rem 11%;
+}
+main .contact-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+main .contact-section .container .content-contact-section {
+  display: flex;
+  justify-content: space-between;
+}
+main .contact-section .container .content-contact-section .touch-contact {
+  width: 60%;
+}
+main .contact-section .container .content-contact-section .touch-contact h2 {
+  font-size: 25px;
+  font-weight: 600;
+}
+main .contact-section .container .content-contact-section .touch-contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .contact-section .container .content-contact-section .touch-contact form textarea {
+  resize: none;
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  outline: none;
+  border: 1px solid rgba(128, 128, 128, 0.371);
+}
+main .contact-section .container .content-contact-section .touch-contact form textarea::-moz-placeholder {
+  font-family: "rubik";
+}
+main .contact-section .container .content-contact-section .touch-contact form textarea::placeholder {
+  font-family: "rubik";
+}
+main .contact-section .container .content-contact-section .touch-contact form .name-and-email {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+main .contact-section .container .content-contact-section .touch-contact form .name-and-email input {
+  border: 1px solid rgba(128, 128, 128, 0.371);
+  outline: none;
+  padding: 10px;
+  width: 48%;
+}
+main .contact-section .container .content-contact-section .touch-contact form .enter-subject {
+  border: 1px solid rgba(128, 128, 128, 0.371);
+  outline: none;
+  padding: 10px;
+}
+main .contact-section .container .content-contact-section .touch-contact form .button button {
+  padding: 17px 35px;
+  color: white;
+  border: none;
+  background-color: rgb(32, 198, 182);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+main .contact-section .container .content-contact-section .touch-contact form .button button:hover {
+  background-color: rgb(255, 74, 83);
+}
+main .contact-section .container .content-contact-section .right-part-info {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+main .contact-section .container .content-contact-section .right-part-info .info-touch-contact {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+}
+main .contact-section .container .content-contact-section .right-part-info .info-touch-contact i {
+  font-size: 25px;
+  color: rgb(122, 131, 151);
+}
+main .contact-section .container .content-contact-section .right-part-info .info-touch-contact div h6 {
+  font-size: 17px;
+  font-weight: 400;
+}
+main .contact-section .container .content-contact-section .right-part-info .info-touch-contact div p {
+  width: 90%;
+  color: rgb(122, 131, 151);
+}
+
+@media (max-width: 991px) {
+  main .contact-section .map iframe {
+    height: 400px;
+  }
+  main .contact-section .container .content-contact-section {
+    flex-direction: column;
+  }
+  main .contact-section .container .content-contact-section .touch-contact {
+    width: 100%;
+  }
+  main .contact-section .container .content-contact-section .touch-contact form button {
+    width: 20%;
+  }
+  main .contact-section .container .content-contact-section .right-part-info .info-touch-contact div p {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  main .contact-section .container .content-contact-section {
+    flex-direction: column;
+  }
+  main .contact-section .container .content-contact-section .touch-contact {
+    width: 100%;
+  }
+  main .contact-section .container .content-contact-section .touch-contact form button {
+    width: 45%;
+  }
+}
+@media (max-width: 576px) {
+  main .contact .content-contact .map iframe {
+    height: 200px;
+  }
+  main .contact .content-contact h1 {
+    font-size: 50px;
+  }
+  main .contact-section {
+    padding: 5rem 11%;
+  }
+  main .contact-section .container .content-contact-section .right-part-info .info-touch-contact i {
+    font-size: 17px;
+  }
+  main .contact-section .container .content-contact-section .right-part-info .info-touch-contact div h6 {
+    font-size: 15px;
+  }
+  main .contact-section .container .content-contact-section .right-part-info .info-touch-contact div p {
+    font-size: 10px;
+  }
+}
+main .blog {
+  background-color: black;
+  height: 60vh;
+  position: relative;
+}
+main .blog img {
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .blog .content-blog {
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+main .blog .content-blog h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 80px;
+  font-family: "Nothing You Could Do";
+}
+main .blog .content-blog p {
+  color: white;
+  font-family: "rubik";
+}
+main .blog-section {
+  padding: 10rem 11%;
+  font-family: "rubik";
+}
+main .blog-section .container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+}
+main .blog-section .container h3 {
+  font-weight: 500;
+}
+main .blog-section .container .left-section-blog {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+main .blog-section .container .left-section-blog .blog-item {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+main .blog-section .container .left-section-blog .blog-item .img-part-blog {
+  position: relative;
+}
+main .blog-section .container .left-section-blog .blog-item .img-part-blog img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .blog-section .container .left-section-blog .blog-item .img-part-blog .date {
+  position: absolute;
+  top: 80%;
+  left: 30px;
+  background-color: rgb(255, 74, 83);
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+main .blog-section .container .left-section-blog .blog-item .img-part-blog .date a {
+  color: white;
+}
+main .blog-section .container .left-section-blog .blog-item .img-part-blog .date a:first-child {
+  font-weight: 700;
+  font-size: 30px;
+}
+main .blog-section .container .left-section-blog .blog-item .content-part-blog {
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main .blog-section .container .left-section-blog .blog-item .content-part-blog .header-content-blog {
+  color: rgb(4, 14, 39);
+  font-weight: 600;
+  font-size: 25px;
+  transition: 0.3s;
+}
+main .blog-section .container .left-section-blog .blog-item .content-part-blog .header-content-blog:hover {
+  color: rgb(255, 74, 83);
+}
+main .blog-section .container .left-section-blog .blog-item .content-part-blog p {
+  color: rgb(122, 131, 151);
+}
+main .blog-section .container .left-section-blog .blog-item .content-part-blog .comments-and-lifestyle a {
+  color: rgb(122, 131, 151);
+  transition: 0.3s;
+  transition: 0.3s;
+}
+main .blog-section .container .left-section-blog .blog-item .content-part-blog .comments-and-lifestyle a:hover {
+  color: rgb(255, 74, 83);
+}
+main .blog-section .container .left-section-blog .blog-item .content-part-blog .comments-and-lifestyle a:first-child {
+  padding-right: 10px;
+  border-right: 1px solid rgba(128, 128, 128, 0.273);
+}
+main .blog-section .container .left-section-blog .blog-item .content-part-blog .comments-and-lifestyle a:nth-child(2) {
+  padding-left: 10px;
+}
+main .blog-section .container .right-section-blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 40px;
+  width: 60%;
+}
+main .blog-section .container .right-section-blog h3::after {
+  content: " ";
+  background-color: rgba(128, 128, 128, 0.273);
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: 20px 0;
+}
+main .blog-section .container .right-section-blog .search-part {
+  padding: 18px;
+  background-color: rgb(251, 249, 254);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .blog-section .container .right-section-blog .search-part .search-keyword {
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  gap: 7px;
+  background-color: white;
+}
+main .blog-section .container .right-section-blog .search-part .search-keyword input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+main .blog-section .container .right-section-blog .search-part .search-keyword a i {
+  color: rgb(122, 131, 151);
+}
+main .blog-section .container .right-section-blog .search-part button {
+  cursor: pointer;
+  border: none;
+  padding: 17px;
+  color: white;
+  background-color: rgb(32, 198, 182);
+  transition: 0.3s;
+}
+main .blog-section .container .right-section-blog .search-part button:hover {
+  background-color: rgb(255, 74, 83);
+}
+main .blog-section .container .right-section-blog .category {
+  padding: 30px;
+  background-color: rgb(251, 249, 254);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+main .blog-section .container .right-section-blog .category ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .blog-section .container .right-section-blog .category ul li a {
+  color: rgb(122, 131, 151);
+  transition: 0.3s;
+}
+main .blog-section .container .right-section-blog .category ul li a:hover {
+  color: rgb(255, 74, 83);
+}
+main .blog-section .container .right-section-blog .category ul li::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(128, 128, 128, 0.273);
+  margin-top: 15px;
+}
+main .blog-section .container .right-section-blog .category ul li:last-child::after {
+  display: none;
+}
+main .blog-section .container .right-section-blog .recent-posts {
+  padding: 30px;
+  background-color: rgb(251, 249, 254);
+  width: 100%;
+}
+main .blog-section .container .right-section-blog .recent-posts ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .blog-section .container .right-section-blog .recent-posts ul li {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+main .blog-section .container .right-section-blog .recent-posts ul li .content-recent-post {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+main .blog-section .container .right-section-blog .recent-posts ul li .content-recent-post a {
+  color: rgb(4, 14, 39);
+  font-weight: 500;
+  transition: 0.3s;
+}
+main .blog-section .container .right-section-blog .recent-posts ul li .content-recent-post a:hover {
+  color: rgb(255, 74, 83);
+}
+main .blog-section .container .right-section-blog .recent-posts ul li .content-recent-post span {
+  color: rgb(122, 131, 151);
+  font-size: 13px;
+}
+main .blog-section .container .right-section-blog .tag-clouds {
+  padding: 30px;
+  background-color: rgb(251, 249, 254);
+  width: 100%;
+}
+main .blog-section .container .right-section-blog .tag-clouds a {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px;
+  background-color: white;
+  font-size: 12px;
+  border: 1px solid rgba(128, 128, 128, 0.273);
+  color: rgb(122, 131, 151);
+  transition: 0.3s;
+}
+main .blog-section .container .right-section-blog .tag-clouds a:hover {
+  background-color: rgb(255, 74, 83);
+  color: white;
+}
+main .blog-section .container .right-section-blog .instagram-feeds {
+  padding: 30px;
+  background-color: rgb(251, 249, 254);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+main .blog-section .container .right-section-blog .instagram-feeds .img-part-instagram-feeds {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+main .blog-section .container .right-section-blog .instagram-feeds .img-part-instagram-feeds div {
+  width: 100%;
+  height: 100%;
+}
+main .blog-section .container .right-section-blog .instagram-feeds .img-part-instagram-feeds div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .blog-section .container .right-section-blog .news-letter {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  width: 100%;
+  background-color: rgb(251, 249, 254);
+}
+main .blog-section .container .right-section-blog .news-letter input {
+  border: 1px solid rgba(128, 128, 128, 0.273);
+  outline: none;
+  padding: 15px;
+  width: 100%;
+}
+main .blog-section .container .right-section-blog .news-letter button {
+  border: none;
+  padding: 15px;
+  width: 100%;
+  cursor: pointer;
+  background-color: rgb(32, 198, 182);
+  color: white;
+  transition: 0.3s;
+}
+main .blog-section .container .right-section-blog .news-letter button:hover {
+  background-color: rgb(255, 74, 83);
+}
+
+main .blog-section .container .blog-item .content-part-blog .header-content-singleBlog {
+  color: rgb(4, 14, 39);
+  font-weight: 600;
+  font-size: 25px;
+}
+
+main {
+  padding-top: 90px;
+}
+main .country {
+  position: relative;
+  width: 100%;
+  height: 86vh;
+  background: black;
+}
+main .country img {
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .country .slide {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .country .slide .country-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main .country .slide .country-content h1 {
+  color: white;
+  font-size: 150px;
+  font-weight: 100;
+  font-family: "Nothing You Could Do";
+}
+main .country .slide .country-content p {
+  color: white;
+  font-weight: 400;
+  font-family: "rubik";
+}
+main .country .slide .country-content a {
+  font-family: "rubik";
+  color: white;
+  margin-top: 40px;
+  padding: 15px 30px;
+  background-color: rgb(32, 198, 182);
+  border-radius: 3px;
+  transition: 0.3s;
+}
+main .country .slide .country-content a:hover {
+  background-color: rgb(255, 74, 83);
+}
+main .country .slide .slideIcon {
+  cursor: pointer;
+  padding: 40px 20px;
+  background-color: rgba(255, 255, 255, 0.295);
+  transition: 0.2s;
+}
+main .country .slide .slideIcon i {
+  transition: 0.2s;
+  color: white;
+}
+main .country .slide .slideIcon:hover {
+  background-color: #fff;
+}
+main .country .slide .slideIcon:hover i {
+  color: rgb(4, 14, 39);
+}
+main .wantToGo {
+  padding: 40px 11%;
+  background-color: rgb(4, 14, 39);
+  font-family: "rubik";
+}
+main .wantToGo .container form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .wantToGo .container form h2 {
+  font-weight: 300;
+  color: white;
+}
+main .wantToGo .container form input {
+  color-scheme: dark;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.616);
+  outline: none;
+  padding: 16px 30px;
+}
+main .wantToGo .container form input::-moz-placeholder {
+  color: white;
+}
+main .wantToGo .container form input::placeholder {
+  color: white;
+}
+main .wantToGo .container form select {
+  color-scheme: dark;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.616);
+  outline: none;
+  padding: 16px 30px;
+}
+main .wantToGo .container form select option {
+  color: rgb(4, 14, 39);
+}
+main .wantToGo .container form button {
+  border: none;
+  padding: 15px 30px;
+  border-radius: 3px;
+  background-color: rgb(255, 74, 83);
+  color: white;
+  cursor: pointer;
+}
+main .wantToGo .container form button:hover {
+  transition: 0.3s;
+}
+main .wantToGo .container form button:hover:hover {
+  background-color: rgb(32, 198, 182);
+}
+main .destination-home {
+  padding: 10rem 11%;
+  font-family: "rubik";
+}
+main .destination-home .content-part-destination {
+  text-align: center;
+}
+main .destination-home .content-part-destination h2 {
+  font-size: 40px;
+  font-weight: 400;
+}
+main .destination-home .content-part-destination p {
+  color: rgb(122, 131, 151);
+  padding: 3rem 150px;
+}
+main .destination-home .img-part-destination {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+main .destination-home .img-part-destination .images-destination {
+  position: relative;
+}
+main .destination-home .img-part-destination .images-destination .background-black {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  bottom: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: 0.2s;
+  background-color: black;
+}
+main .destination-home .img-part-destination .images-destination .background-black img {
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+}
+main .destination-home .img-part-destination .images-destination .background-black span {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  transition: 0.2s;
+  color: white;
+}
+main .destination-home .img-part-destination .images-destination .background-black span a {
+  color: white;
+  font-size: 12px;
+  background-color: rgb(32, 198, 182);
+  padding: 5px 10px;
+  transition: 0.2s;
+  border-radius: 20px;
+}
+main .destination-home .img-part-destination .images-destination:hover .background-black {
+  bottom: 10px;
+}
+main .destination-home .img-part-destination .images-destination:hover span {
+  color: rgb(255, 74, 83);
+}
+main .destination-home .img-part-destination .images-destination:hover span a {
+  background-color: rgb(255, 74, 83);
+}
+main .subscribe {
+  width: 100%;
+  height: 30vh;
+  background-color: rgb(14, 21, 36);
+  font-family: "rubik";
+  position: relative;
+}
+main .subscribe img {
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .subscribe .content {
+  width: 100%;
+  gap: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .subscribe .content .subscribe-header {
+  width: 30%;
+}
+main .subscribe .content .subscribe-header h2 {
+  font-weight: 400;
+  color: white;
+}
+main .subscribe .content .subscribe-header p {
+  color: rgb(122, 131, 151);
+}
+main .subscribe .content .subscribe-input {
+  display: flex;
+  gap: 10px;
+}
+main .subscribe .content .subscribe-input input {
+  border: none;
+  outline: none;
+  padding: 1rem 11rem 1rem 10px;
+  border-radius: 4px;
+}
+main .subscribe .content .subscribe-input input::-moz-placeholder {
+  color: rgb(122, 131, 151);
+}
+main .subscribe .content .subscribe-input input::placeholder {
+  color: rgb(122, 131, 151);
+}
+main .subscribe .content .subscribe-input button {
+  cursor: pointer;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  padding: 1rem 30px;
+  background-color: rgb(255, 74, 83);
+  transition: 0.3s;
+}
+main .subscribe .content .subscribe-input button:hover {
+  background-color: rgb(32, 198, 182);
+}
+main .popular-places {
+  font-family: "rubik";
+  background-color: rgb(248, 250, 253);
+  padding: 8rem 11%;
+}
+main .popular-places .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+main .popular-places .container .content-part-places {
+  width: 50%;
+  text-align: center;
+}
+main .popular-places .container .content-part-places h2 {
+  color: rgb(4, 14, 39);
+  font-size: 35px;
+  font-weight: 400;
+}
+main .popular-places .container .content-part-places p {
+  padding: 20px 0;
+  color: rgb(122, 131, 151);
+}
+main .popular-places .container .img-part-places {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+main .popular-places .container .img-part-places .img-cards-places {
+  transition: 0.3s;
+  border-radius: 7px;
+  overflow: hidden;
+}
+main .popular-places .container .img-part-places .img-cards-places .images-places {
+  background-color: white;
+  position: relative;
+}
+main .popular-places .container .img-part-places .img-cards-places .images-places img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .popular-places .container .img-part-places .img-cards-places .images-places a {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-size: 13px;
+  background-color: rgb(32, 198, 182);
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+main .popular-places .container .img-part-places .img-cards-places .content-places {
+  background-color: white;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .popular-places .container .img-part-places .img-cards-places .content-places .header-content-places {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .popular-places .container .img-part-places .img-cards-places .content-places .header-content-places a {
+  transition: 0.3s;
+  color: rgb(4, 14, 39);
+  font-size: 20px;
+}
+main .popular-places .container .img-part-places .img-cards-places .content-places .header-content-places p {
+  font-size: 12px;
+  color: rgb(122, 131, 151);
+}
+main .popular-places .container .img-part-places .img-cards-places .content-places .bottom-content-places {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .popular-places .container .img-part-places .img-cards-places .content-places .bottom-content-places .rate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+main .popular-places .container .img-part-places .img-cards-places .content-places .bottom-content-places .rate span {
+  display: flex;
+  gap: 0;
+}
+main .popular-places .container .img-part-places .img-cards-places .content-places .bottom-content-places .rate span i {
+  color: rgb(253, 174, 92);
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+main .popular-places .container .img-part-places .img-cards-places .content-places .bottom-content-places .rate a {
+  font-size: 13px;
+  color: rgb(122, 131, 151);
+}
+main .popular-places .container .img-part-places .img-cards-places .content-places .bottom-content-places .remaining-time span {
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+  color: rgb(122, 131, 151);
+}
+main .popular-places .container .img-part-places .img-cards-places .content-places .bottom-content-places .remaining-time span a {
+  color: rgb(122, 131, 151);
+}
+main .popular-places .container .img-part-places .img-cards-places:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+main .popular-places .container .img-part-places .img-cards-places:hover .images-places a {
+  background-color: rgb(255, 74, 83);
+}
+main .popular-places .container .img-part-places .img-cards-places:hover .content-places .header-content-places a {
+  color: rgb(255, 74, 83);
+}
+main .video {
+  background-color: black;
+  height: 76vh;
+  position: relative;
+  width: 100%;
+}
+main .video img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.8;
+}
+main .video h1 {
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-weight: 400;
+  font-size: 80px;
+  font-family: "Nothing You Could Do";
+  position: absolute;
+  top: 31%;
+  left: 50%;
+  transform: translate(-50%, -31%);
+}
+main .video .i-animation {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  animation-name: i-animation;
+  animation-timing-function: linear;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+}
+@keyframes i-animation {
+  0% {
+    background-color: rgb(32, 198, 182);
+    border: 1px solid rgb(32, 198, 182);
+    padding: 0;
+  }
+  40% {
+    padding: 12px;
+    background-color: rgba(32, 198, 181, 0.526);
+    border: 1px solid rgba(32, 198, 182, 0.4);
+  }
+  100% {
+    padding: 30px;
+    border: 1px solid rgba(32, 198, 182, 0);
+    background-color: rgba(32, 198, 182, 0);
+  }
+}
+main .video .i-animation a i {
+  font-size: 15px;
+  padding: 30px 32px;
+  color: white;
+  background-color: rgb(32, 198, 182);
+  border-radius: 50%;
+}
+main .travel-part {
+  padding: 50px 11%;
+  font-family: "rubik";
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+main .travel-part div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+main .travel-part div i {
+  font-size: 50px;
+  color: rgb(255, 74, 83);
+}
+main .travel-part div h4 {
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(4, 14, 39);
+}
+main .travel-part div p {
+  color: rgb(122, 131, 151);
+  font-weight: 300;
+  font-size: 15px;
+  text-align: center;
+}
+main .author {
+  font-family: "rubik";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 0;
+  background-color: rgb(248, 250, 253);
+  text-align: center;
+  gap: 30px;
+}
+main .author .author-logo {
+  position: relative;
+}
+main .author .author-logo .author-img {
+  overflow: hidden;
+  border-end-end-radius: 50%;
+}
+main .author .author-logo .author-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .author .author-logo i {
+  color: white;
+  background-color: rgb(32, 198, 182);
+  padding: 15px 16px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 1px;
+  left: 70px;
+}
+main .author .author-content {
+  width: 45%;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+main .author .author-content p {
+  color: rgb(4, 14, 39);
+}
+main .author .author-content h4 {
+  font-weight: 400;
+  color: rgb(122, 131, 151);
+}
+main .author .author-content .span {
+  display: flex;
+  gap: 10px;
+}
+main .author .author-content .span span {
+  border-radius: 50%;
+  padding: 6px;
+  background-color: rgb(122, 131, 151);
+}
+main .author .author-content .span span:nth-child(2) {
+  background-color: rgb(255, 74, 83);
+}
+main .recent-trips {
+  padding: 10rem 11%;
+  font-family: "rubik";
+}
+main .recent-trips .container {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+main .recent-trips .container h1 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 400;
+}
+main .recent-trips .container .recent-trips-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+main .recent-trips .container .recent-trips-cards .trips-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+main .recent-trips .container .recent-trips-cards .trips-card .trip-img {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 7px 7px 0 0;
+}
+main .recent-trips .container .recent-trips-cards .trips-card .trip-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .recent-trips .container .recent-trips-cards .trips-card .trip-content {
+  width: 100%;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+main .recent-trips .container .recent-trips-cards .trips-card .trip-content span {
+  font-size: 13px;
+  color: rgb(122, 131, 151);
+}
+main .recent-trips .container .recent-trips-cards .trips-card .trip-content a {
+  font-size: 20px;
+  color: rgb(4, 14, 39);
+  transition: 0.3s;
+}
+main .recent-trips .container .recent-trips-cards .trips-card:hover .trip-content a {
+  color: rgb(255, 74, 83);
+}
+
+@media (max-width: 1200px) {
+  main {
+    padding-top: 70px;
+  }
+  main .country .slide .country-content h1 {
+    font-size: 100px;
+  }
+  main .wantToGo .container form {
+    gap: 2px;
+  }
+  main .wantToGo .container form h2 {
+    font-size: 20px;
+  }
+  main .wantToGo .container form input {
+    padding: 10px 20px;
+  }
+  main .wantToGo .container form select {
+    padding: 10px 20px;
+  }
+  main .wantToGo .container form button {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 991px) {
+  main {
+    padding-top: 140px;
+  }
+  main .country .slide .country-content h1 {
+    font-size: 80px;
+  }
+  main .wantToGo .container form {
+    flex-direction: column;
+    gap: 30px;
+  }
+  main .wantToGo .container form h2 {
+    font-size: 30px;
+  }
+  main .wantToGo .container form input {
+    width: 100%;
+    padding: 10px 20px;
+  }
+  main .wantToGo .container form select {
+    width: 100%;
+    padding: 10px 20px;
+  }
+  main .wantToGo .container form button {
+    width: 100%;
+    padding: 10px 20px;
+  }
+  main .destination-home .content-part-destination p {
+    padding: 2rem 100px;
+  }
+  main .destination-home .img-part-destination {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main .subscribe .content {
+    padding: 0 11%;
+    flex-direction: column;
+    align-items: start;
+  }
+  main .subscribe .content .subscribe-header {
+    width: 100%;
+  }
+  main .popular-places .container .img-part-places {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main .travel-part {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  main .recent-trips .container .recent-trips-cards {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+  main .recent-trips .container .recent-trips-cards .trips-card .trip-content {
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    padding-top: 140px;
+  }
+  main .country .slide {
+    display: block;
+  }
+  main .country .slide .country-content {
+    padding: 20px;
+  }
+  main .country .slide .country-content h1 {
+    font-size: 55px;
+  }
+  main .country .slide .slideIcon {
+    display: none;
+  }
+  main .wantToGo .container form {
+    flex-direction: column;
+  }
+  main .wantToGo .container form h2 {
+    font-size: 25px;
+  }
+  main .destination-home .content-part-destination p {
+    padding: 1rem 30px;
+  }
+  main .subscribe {
+    width: 100%;
+    height: 50vh;
+  }
+  main .subscribe .content .subscribe-input {
+    width: 100%;
+    flex-direction: column;
+  }
+  main .popular-places .container .content-part-places {
+    width: 100%;
+  }
+  main .popular-places .container .img-part-places .img-cards-places .content-places .header-content-places a {
+    font-size: 16px;
+  }
+  main .popular-places .container .img-part-places .img-cards-places .content-places .header-content-places p {
+    font-size: 10;
+  }
+  main .popular-places .container .img-part-places .img-cards-places .content-places .bottom-content-places {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+  }
+}
+@media (max-width: 576px) {
+  main .destination-home .content-part-destination p {
+    padding: 1rem 0px;
+  }
+  main .destination-home .img-part-destination {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  main .popular-places .container .img-part-places {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  main .video h1 {
+    font-size: 50px;
+  }
+  main .video .i-animation {
+    border: 1px solid black;
+  }
+  main .author {
+    padding: 5rem 11%;
+  }
+  main .author .author-content {
+    width: 100%;
+  }
+  main .recent-trips {
+    padding: 5rem 11%;
   }
 }
 header {
