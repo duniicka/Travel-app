@@ -621,8 +621,6 @@ main {
 @media (max-width:768px) {
     main {
         .single-blog-section {
-            padding: 5rem 7% 1rem 7%;
-
             .container {
                 flex-direction: column;
 
@@ -695,6 +693,7 @@ main {
         }
 
         .single-blog-section {
+            padding: 5rem 7% 1rem 7%;
             .container {
                 flex-direction: column;
 

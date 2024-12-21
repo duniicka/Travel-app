@@ -118,13 +118,6 @@ main {
         }
     }
 }
-@media (max-width:768px) {
-    main{
-        .story{
-            padding: 5rem 7%;
-        }
-    }
-}
 @media (max-width: 576px) {
     main {
         .about {
@@ -135,6 +128,7 @@ main {
             }
         }
         .story {
+            padding: 5rem 7%;
             .container {
                 padding: 20px 0;
             }

@@ -228,14 +228,12 @@ main .story .container .story-statics-part .static-story span {
     gap: 50px;
   }
 }
-@media (max-width: 768px) {
-  main .story {
-    padding: 5rem 7%;
-  }
-}
 @media (max-width: 576px) {
   main .about .content-about h1 {
     font-size: 50px;
+  }
+  main .story {
+    padding: 5rem 7%;
   }
   main .story .container {
     padding: 20px 0;
@@ -498,6 +496,9 @@ main .popular-places-destination .container .img-part-places .btn-bg-red:hover {
 @media (max-width: 576px) {
   main .destination .content-destination h1 {
     font-size: 50px;
+  }
+  main .popular-places-destination {
+    padding: 5rem 7%;
   }
   main .popular-places-destination .container .img-part-places .btn-bg-red {
     width: 50%;
@@ -972,9 +973,6 @@ main .blog-section .container .right-section-blog .news-letter input {
   }
 }
 @media (max-width: 768px) {
-  main .blog-section {
-    padding: 5rem 7%;
-  }
   main .blog-section .container {
     flex-direction: column;
   }
@@ -1517,9 +1515,6 @@ main .padding {
   }
 }
 @media (max-width: 768px) {
-  main .single-blog-section {
-    padding: 5rem 7% 1rem 7%;
-  }
   main .single-blog-section .container {
     flex-direction: column;
   }
@@ -1559,6 +1554,9 @@ main .padding {
   }
   main .single-blog .content--single-blog h1 {
     font-size: 50px;
+  }
+  main .single-blog-section {
+    padding: 5rem 7% 1rem 7%;
   }
   main .single-blog-section .container {
     flex-direction: column;
@@ -2260,17 +2258,11 @@ main .recent-trips .container .recent-trips-cards .trips-card:hover .trip-conten
   main .country .slide .slideIcon {
     display: none;
   }
-  main .wantToGo {
-    padding: 5rem 7%;
-  }
   main .wantToGo .container form {
     flex-direction: column;
   }
   main .wantToGo .container form h2 {
     font-size: 25px;
-  }
-  main .destination-home {
-    padding: 5rem 7%;
   }
   main .destination-home .content-part-destination p {
     padding: 1rem 30px;
@@ -2282,9 +2274,6 @@ main .recent-trips .container .recent-trips-cards .trips-card:hover .trip-conten
   main .subscribe .content .subscribe-input {
     width: 100%;
     flex-direction: column;
-  }
-  main .popular-places {
-    padding: 5rem 7%;
   }
   main .popular-places .container .content-part-places {
     width: 100%;
@@ -2303,11 +2292,20 @@ main .recent-trips .container .recent-trips-cards .trips-card:hover .trip-conten
   }
 }
 @media (max-width: 576px) {
+  main .wantToGo {
+    padding: 5rem 7%;
+  }
+  main .destination-home {
+    padding: 5rem 7%;
+  }
   main .destination-home .content-part-destination p {
     padding: 1rem 0px;
   }
   main .destination-home .img-part-destination {
     grid-template-columns: repeat(1, 1fr);
+  }
+  main .popular-places {
+    padding: 5rem 7%;
   }
   main .popular-places .container .img-part-places {
     grid-template-columns: repeat(1, 1fr);
@@ -2318,14 +2316,17 @@ main .recent-trips .container .recent-trips-cards .trips-card:hover .trip-conten
   main .video .i-animation {
     border: 1px solid black;
   }
+  main .subscribe .content {
+    padding: 5rem 7%;
+  }
   main .author {
-    padding: 5rem 11%;
+    padding: 5rem 7%;
   }
   main .author .author-content {
     width: 100%;
   }
   main .recent-trips {
-    padding: 5rem 11%;
+    padding: 5rem 7%;
   }
 }
 header {
@@ -2645,6 +2646,7 @@ footer .instagram-footer .img-part-instagram .inst-images-footer img {
 }
 @media (max-width: 576px) {
   footer {
+    padding: 5rem 7%;
     grid-template-columns: repeat(1, 1fr);
   }
   footer .travel-footer {

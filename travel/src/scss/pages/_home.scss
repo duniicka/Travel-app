@@ -30,6 +30,7 @@ main {
                 justify-content: center;
                 align-items: center;
                 text-align: center;
+
                 h1 {
                     color: white;
                     font-size: 150px;
@@ -42,7 +43,8 @@ main {
                     font-weight: 400;
                     font-family: $font-rubik;
                 }
-                .btn-bg-aqua{
+
+                .btn-bg-aqua {
                     margin-top: 40px;
                 }
             }
@@ -788,9 +790,9 @@ main {
                 }
             }
         }
-        
+
         .wantToGo {
-            padding: 5rem 7%;
+
             .container {
                 form {
                     flex-direction: column;
@@ -803,7 +805,7 @@ main {
         }
 
         .destination-home {
-            padding: 5rem 7%;
+
             .content-part-destination {
                 p {
                     padding: 1rem 30px;
@@ -816,6 +818,7 @@ main {
             height: 50vh;
 
             .content {
+
                 .subscribe-input {
                     width: 100%;
                     flex-direction: column;
@@ -824,7 +827,6 @@ main {
         }
 
         .popular-places {
-            padding: 5rem 7%;
             .container {
                 .content-part-places {
                     width: 100%;
@@ -859,7 +861,14 @@ main {
 
 @media (max-width: 576px) {
     main {
+        .wantToGo {
+
+            padding: 5rem 7%;
+        }
+
         .destination-home {
+            padding: 5rem 7%;
+
             .content-part-destination {
                 p {
                     padding: 1rem 0px;
@@ -872,6 +881,7 @@ main {
         }
 
         .popular-places {
+            padding: 5rem 7%;
             .container {
                 .img-part-places {
                     grid-template-columns: repeat(1, 1fr);
@@ -888,9 +898,13 @@ main {
                 border: 1px solid black;
             }
         }
-
+        .subscribe{
+            .content{
+                padding: 5rem 7%;
+            }
+        }
         .author {
-            padding: 5rem 11%;
+            padding: 5rem 7%;
 
             .author-content {
                 width: 100%;
@@ -898,7 +912,7 @@ main {
         }
 
         .recent-trips {
-            padding: 5rem 11%;
+            padding: 5rem 7%;
         }
     }
 }
