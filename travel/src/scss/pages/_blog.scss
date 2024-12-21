@@ -204,15 +204,6 @@ main {
                             }
                         }
                     }
-
-                    button {
-                        cursor: pointer;
-                        border: none;
-                        padding: 17px;
-                        color: white;
-                        background-color: $aqua-color;
-                        @include hover-btn ($aqua-color)
-                    }
                 }
 
                 .category {
@@ -353,15 +344,15 @@ main {
                         // display: block;
                     }
 
-                    button {
-                        border: none;
-                        padding: 15px;
-                        width: 100%;
-                        cursor: pointer;
-                        background-color: $aqua-color;
-                        color: white;
-                        @include hover-btn ($aqua-color)
-                    }
+                    // button {
+                    //     border: none;
+                    //     padding: 15px;
+                    //     width: 100%;
+                    //     cursor: pointer;
+                    //     background-color: $aqua-color;
+                    //     color: white;
+                    //     @include hover-btn ($aqua-color)
+                    // }
                 }
             }
         }

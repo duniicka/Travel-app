@@ -90,10 +90,6 @@ main {
                     a {
                         text-align: center;
                         width: 100%;
-                        background-color: $red-color;
-                        padding: 20px;
-                        color: white;
-                        @include hover-btn($red-color)
                     }
                 }
             }
@@ -245,7 +241,7 @@ main {
                     }
                 }
 
-                .more-places {
+                .btn-bg-red {
                     width: 40%;
                     text-align: center;
                     margin: auto;
@@ -352,7 +348,7 @@ main {
         .popular-places-destination{
             .container{
                 .img-part-places{
-                    .more-places{
+                    .btn-bg-red{
                         width: 50%;
                     }
                 }
