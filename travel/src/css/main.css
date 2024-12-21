@@ -323,13 +323,6 @@ main .popular-places-destination .container .filter form span {
 main .popular-places-destination .container .filter form a {
   text-align: center;
   width: 100%;
-  background-color: rgb(255, 74, 83);
-  padding: 20px;
-  color: white;
-  transition: 0.3s;
-}
-main .popular-places-destination .container .filter form a:hover {
-  background-color: rgb(32, 198, 182);
 }
 main .popular-places-destination .container .content-part-places {
   display: flex;
@@ -451,7 +444,7 @@ main .popular-places-destination .container .img-part-places .img-cards .img-car
 main .popular-places-destination .container .img-part-places .img-cards .img-cards-places:hover .content-places .header-content-places a {
   color: rgb(255, 74, 83);
 }
-main .popular-places-destination .container .img-part-places .more-places {
+main .popular-places-destination .container .img-part-places .btn-bg-red {
   width: 40%;
   text-align: center;
   margin: auto;
@@ -461,7 +454,7 @@ main .popular-places-destination .container .img-part-places .more-places {
   color: white;
   transition: 0.3s;
 }
-main .popular-places-destination .container .img-part-places .more-places:hover {
+main .popular-places-destination .container .img-part-places .btn-bg-red:hover {
   background-color: rgb(32, 198, 182);
 }
 
@@ -506,7 +499,7 @@ main .popular-places-destination .container .img-part-places .more-places:hover 
   main .destination .content-destination h1 {
     font-size: 50px;
   }
-  main .popular-places-destination .container .img-part-places .more-places {
+  main .popular-places-destination .container .img-part-places .btn-bg-red {
     width: 50%;
   }
 }
@@ -598,15 +591,6 @@ main .contact-section .container .content-contact-section .touch-contact form .e
 }
 main .contact-section .container .content-contact-section .touch-contact form .button button {
   padding: 17px 35px;
-  color: white;
-  border: none;
-  background-color: rgb(32, 198, 182);
-  border-radius: 2px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-main .contact-section .container .content-contact-section .touch-contact form .button button:hover {
-  background-color: rgb(255, 74, 83);
 }
 main .contact-section .container .content-contact-section .right-part-info {
   margin-top: 30px;
@@ -651,7 +635,7 @@ main .contact-section .container .content-contact-section .right-part-info .info
 }
 @media (max-width: 768px) {
   main .contact-section {
-    padding: 5rem 7%;
+    padding: 3rem 7%;
   }
   main .contact-section .container .content-contact-section {
     flex-direction: column;
@@ -857,17 +841,6 @@ main .blog-section .container .right-section-blog .search-part .search-keyword i
 main .blog-section .container .right-section-blog .search-part .search-keyword a i {
   color: rgb(122, 131, 151);
 }
-main .blog-section .container .right-section-blog .search-part button {
-  cursor: pointer;
-  border: none;
-  padding: 17px;
-  color: white;
-  background-color: rgb(32, 198, 182);
-  transition: 0.3s;
-}
-main .blog-section .container .right-section-blog .search-part button:hover {
-  background-color: rgb(255, 74, 83);
-}
 main .blog-section .container .right-section-blog .category {
   padding: 30px;
   background-color: rgb(251, 249, 254);
@@ -987,18 +960,6 @@ main .blog-section .container .right-section-blog .news-letter input {
   padding: 15px;
   width: 100%;
 }
-main .blog-section .container .right-section-blog .news-letter button {
-  border: none;
-  padding: 15px;
-  width: 100%;
-  cursor: pointer;
-  background-color: rgb(32, 198, 182);
-  color: white;
-  transition: 0.3s;
-}
-main .blog-section .container .right-section-blog .news-letter button:hover {
-  background-color: rgb(255, 74, 83);
-}
 
 @media (max-width: 1200px) {
   main .blog-section .container .left-section-blog .blog-item .img-part-blog .date {
@@ -1109,6 +1070,7 @@ main .single-blog-section .container .left-section-blog {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  width: 65%;
 }
 main .single-blog-section .container .left-section-blog .blog-item .img-part-blog {
   position: relative;
@@ -1372,12 +1334,12 @@ main .single-blog-section .container .left-section-blog .comments-blog .comments
   color: rgb(255, 74, 83);
 }
 main .single-blog-section .container .right-section-single-blog {
+  width: 35%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
   gap: 40px;
-  width: 60%;
 }
 main .single-blog-section .container .right-section-single-blog h3::after {
   content: " ";
@@ -1409,17 +1371,6 @@ main .single-blog-section .container .right-section-single-blog .search-part .se
 }
 main .single-blog-section .container .right-section-single-blog .search-part .search-keyword a i {
   color: rgb(122, 131, 151);
-}
-main .single-blog-section .container .right-section-single-blog .search-part button {
-  cursor: pointer;
-  border: none;
-  padding: 17px;
-  color: white;
-  background-color: rgb(32, 198, 182);
-  transition: 0.3s;
-}
-main .single-blog-section .container .right-section-single-blog .search-part button:hover {
-  background-color: rgb(255, 74, 83);
 }
 main .single-blog-section .container .right-section-single-blog .category {
   padding: 30px;
@@ -1540,17 +1491,8 @@ main .single-blog-section .container .right-section-single-blog .news-letter inp
   padding: 15px;
   width: 100%;
 }
-main .single-blog-section .container .right-section-single-blog .news-letter button {
-  border: none;
-  padding: 15px;
-  width: 100%;
-  cursor: pointer;
-  background-color: rgb(32, 198, 182);
-  color: white;
-  transition: 0.3s;
-}
-main .single-blog-section .container .right-section-single-blog .news-letter button:hover {
-  background-color: rgb(255, 74, 83);
+main .padding {
+  padding: 0 11% 11rem 11%;
 }
 
 @media (max-width: 1200px) {
@@ -1581,6 +1523,9 @@ main .single-blog-section .container .right-section-single-blog .news-letter but
   main .single-blog-section .container {
     flex-direction: column;
   }
+  main .single-blog-section .container .left-section-blog {
+    width: 100%;
+  }
   main .single-blog-section .container .left-section-blog .blog-item .img-part-blog .date a:first-child {
     font-size: 20px;
   }
@@ -1603,6 +1548,9 @@ main .single-blog-section .container .right-section-single-blog .news-letter but
   }
   main .single-blog-section .container .left-section-blog .blog_posts .bottom-blog_posts .next--post-blog_posts {
     align-self: flex-end;
+  }
+  main .single-blog-section .container .right-section-single-blog {
+    width: 100%;
   }
 }
 @media (max-width: 576px) {
@@ -1645,6 +1593,33 @@ main .single-blog-section .container .right-section-single-blog .news-letter but
     width: 30%;
   }
 }
+.btn-bg-aqua {
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  background-color: rgb(32, 198, 182);
+  color: white;
+  font-family: "rubik";
+  transition: 0.3s;
+}
+.btn-bg-aqua:hover {
+  background-color: rgb(255, 74, 83);
+}
+
+.btn-bg-red {
+  border: none;
+  padding: 15px 30px;
+  border-radius: 3px;
+  background-color: rgb(255, 74, 83);
+  color: white;
+  font-family: "rubik";
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-bg-red:hover {
+  background-color: rgb(32, 198, 182);
+}
+
 main {
   padding-top: 90px;
 }
@@ -1689,17 +1664,8 @@ main .country .slide .country-content p {
   font-weight: 400;
   font-family: "rubik";
 }
-main .country .slide .country-content a {
-  font-family: "rubik";
-  color: white;
+main .country .slide .country-content .btn-bg-aqua {
   margin-top: 40px;
-  padding: 15px 30px;
-  background-color: rgb(32, 198, 182);
-  border-radius: 3px;
-  transition: 0.3s;
-}
-main .country .slide .country-content a:hover {
-  background-color: rgb(255, 74, 83);
 }
 main .country .slide .slideIcon {
   cursor: pointer;
@@ -1753,20 +1719,6 @@ main .wantToGo .container form select {
 }
 main .wantToGo .container form select option {
   color: rgb(4, 14, 39);
-}
-main .wantToGo .container form button {
-  border: none;
-  padding: 15px 30px;
-  border-radius: 3px;
-  background-color: rgb(255, 74, 83);
-  color: white;
-  cursor: pointer;
-}
-main .wantToGo .container form button:hover {
-  transition: 0.3s;
-}
-main .wantToGo .container form button:hover:hover {
-  background-color: rgb(32, 198, 182);
 }
 main .destination-home {
   padding: 10rem 11%;
@@ -1880,18 +1832,6 @@ main .subscribe .content .subscribe-input input::-moz-placeholder {
 }
 main .subscribe .content .subscribe-input input::placeholder {
   color: rgb(122, 131, 151);
-}
-main .subscribe .content .subscribe-input button {
-  cursor: pointer;
-  border-radius: 4px;
-  color: white;
-  border: none;
-  padding: 1rem 30px;
-  background-color: rgb(255, 74, 83);
-  transition: 0.3s;
-}
-main .subscribe .content .subscribe-input button:hover {
-  background-color: rgb(32, 198, 182);
 }
 main .popular-places {
   font-family: "rubik";

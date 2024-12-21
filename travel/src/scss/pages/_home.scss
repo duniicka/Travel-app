@@ -30,7 +30,6 @@ main {
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-
                 h1 {
                     color: white;
                     font-size: 150px;
@@ -43,15 +42,8 @@ main {
                     font-weight: 400;
                     font-family: $font-rubik;
                 }
-
-                a {
-                    font-family: $font-rubik;
-                    color: white;
+                .btn-bg-aqua{
                     margin-top: 40px;
-                    padding: 15px 30px;
-                    background-color: $aqua-color;
-                    border-radius: 3px;
-                    @include hover-btn($aqua-color)
                 }
             }
 
@@ -109,18 +101,17 @@ main {
                     }
                 }
 
-                button {
-                    border: none;
-                    padding: 15px 30px;
-                    border-radius: 3px;
-                    background-color: $red-color;
-                    color: white;
-                    cursor: pointer;
-
-                    &:hover {
-                        @include hover-btn($red-color)
-                    }
-                }
+                // button {
+                //     border: none;
+                //     padding: 15px 30px;
+                //     border-radius: 3px;
+                //     background-color: $red-color;
+                //     color: white;
+                //     cursor: pointer;
+                //     &:hover {
+                //         @include hover-btn($red-color)
+                //     }
+                // }
             }
         }
     }
@@ -251,16 +242,6 @@ main {
                     &::placeholder {
                         color: $font-color-light;
                     }
-                }
-
-                button {
-                    cursor: pointer;
-                    border-radius: 4px;
-                    color: white;
-                    border: none;
-                    padding: 1rem 30px;
-                    background-color: $red-color;
-                    @include hover-btn($red-color)
                 }
             }
         }
@@ -807,8 +788,7 @@ main {
                 }
             }
         }
-
-
+        
         .wantToGo {
             padding: 5rem 7%;
             .container {
