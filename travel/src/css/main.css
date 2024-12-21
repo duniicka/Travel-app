@@ -969,6 +969,62 @@ main .blog-section .container .right-section-blog .news-letter button:hover {
   background-color: rgb(255, 74, 83);
 }
 
+@media (max-width: 1200px) {
+  main .blog-section .container .left-section-blog .blog-item .img-part-blog .date {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 991px) {
+  main .blog-section .container .left-section-blog .blog-item .content-part-blog .comments-and-lifestyle a {
+    font-size: 13px;
+  }
+}
+@media (max-width: 768px) {
+  main .blog-section .container {
+    flex-direction: column;
+  }
+  main .blog-section .container .left-section-blog .blog-item .img-part-blog .date a:first-child {
+    font-size: 20px;
+  }
+  main .blog-section .container .left-section-blog .blog-item .img-part-blog .date a:last-child {
+    font-size: 15px;
+  }
+  main .blog-section .container .left-section-blog .blog-item .content-part-blog {
+    margin-top: 10px;
+  }
+  main .blog-section .container .left-section-blog .blog-item .content-part-blog p {
+    font-size: 15px;
+  }
+  main .blog-section .container .right-section-blog {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  main .blog-section .container {
+    flex-direction: column;
+  }
+  main .blog-section .container .left-section-blog .blog-item .content-part-blog {
+    margin-top: 10px;
+  }
+  main .blog-section .container .left-section-blog .blog-item .content-part-blog .header-content-blog {
+    font-size: 20px;
+  }
+  main .blog-section .container .left-section-blog .blog-item .content-part-blog p {
+    font-size: 13px;
+  }
+  main .blog-section .container .left-section-blog .blog-item .content-part-blog .comments-and-lifestyle a {
+    font-size: 10px;
+  }
+  main .blog-section .container .left-section-blog .blog-item .content-part-blog .comments-and-lifestyle a:first-child {
+    padding-right: 7px;
+  }
+  main .blog-section .container .left-section-blog .blog-item .content-part-blog .comments-and-lifestyle a:last-child {
+    padding-left: 7px;
+  }
+  main .blog-section .container .right-section-blog {
+    width: 100%;
+  }
+}
 main .blog-section .container .blog-item .content-part-blog .header-content-singleBlog {
   color: rgb(4, 14, 39);
   font-weight: 600;

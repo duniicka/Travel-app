@@ -336,3 +336,110 @@ main {
     }
 }
 
+@media (max-width:1200px) {
+    main {
+        .blog-section {
+            .container {
+                .left-section-blog {
+                    .blog-item {
+                        .img-part-blog {
+                            .date {
+                                padding: 10px 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:991px) {
+    main{
+        .blog-section{
+            .container{
+                .left-section-blog{
+                    .blog-item{
+                        .content-part-blog{
+                            .comments-and-lifestyle{
+                                a{
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:768px){
+    main{
+        .blog-section{
+            .container{
+                flex-direction: column;
+                .left-section-blog{
+                    .blog-item{
+                        .img-part-blog{
+                            .date{
+                                a{
+                                    &:first-child{
+                                        font-size: 20px;
+                                    }
+                                    &:last-child{
+                                        font-size: 15px;
+                                    }
+                                }
+                            }
+                        }
+                        .content-part-blog{
+                            margin-top: 10px;
+                            p{
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+                .right-section-blog{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px){
+    main{
+        .blog-section{
+            .container{
+                flex-direction: column;
+                .left-section-blog{
+                    .blog-item{
+                        .content-part-blog{
+                            margin-top: 10px;
+                            .header-content-blog{
+                                font-size: 20px;
+                            }
+                            p{
+                                font-size: 13px;
+                            }
+                            .comments-and-lifestyle{
+                                a{
+                                    font-size: 10px;
+                                    &:first-child{
+                                        padding-right: 7px;
+                                    }
+                                    &:last-child{
+                                        padding-left: 7px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .right-section-blog{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
