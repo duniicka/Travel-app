@@ -74,6 +74,7 @@ header {
                         a {
                             color: $font-color-dark;
                             @include hover-aqua;
+
                             &:hover .dropdown {
 
                                 display: block;
@@ -130,9 +131,9 @@ header {
         }
     }
 
-    .media-part {
+    .toggle-menu {
         display: none;
-        justify-content: end;
+        // justify-content: end;
         background-color: rgb(75, 75, 75);
         padding: 13px 20px;
 
@@ -222,8 +223,47 @@ header {
             }
         }
 
-        .media-part {
+        .toggle-menu {
             display: flex;
+            flex-direction: column;
+
+            .menu {
+                align-self: flex-end;
+            }
+
+            .toggle-list {
+                display: none;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    li {
+                        position: relative;
+
+                        a {
+                            color: white;
+                        }
+
+                        #blog-toggle-list {
+                            display: none;
+                            background-color: rgb(75, 75, 75);
+                            top: 20px;
+                            left: 5px;
+                            position: absolute;
+                            padding: 10px;
+                            z-index: 999;
+
+                            ul {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 20px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
