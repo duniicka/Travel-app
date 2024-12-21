@@ -20,7 +20,7 @@
         <nav>
           <ul>
             <li><a href="./index.html">Home</a></li>
-            <li><a href="">About</a></li>
+            <li><a href="./about.html">About</a></li>
             <li><a href="./destination.html">Destination</a></li>
             <li><a href="">Pages <i class="fa-solid fa-angle-down"></i></a>
             </li>
@@ -50,10 +50,31 @@
         </div>
       </div>
     </div>
-    <div class="media-part">
-      <div class="menu">
+
+    <div class="toggle-menu">
+      <div class="menu"  onclick="toggleList()">
         <span>Menu</span>
         <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="toggle-list"  id="toggle-list">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./destination.html">Destination</a></li>
+          <li><a href="">Page</a></li>
+          <li onclick="blogToggle()" style="color: white;">Blog
+            <div id="blog-toggle-list">
+              <ul >
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./single-blog.html">Single blog</a></li>
+              </ul>
+
+            </div>
+          </a></li>
+          <li><a href="./contact.html">
+            Contact
+          </a></li>
+        </ul>
       </div>
     </div>
   </header>
@@ -281,5 +302,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="./script.js"></script>
+ </body>
 
 </html>

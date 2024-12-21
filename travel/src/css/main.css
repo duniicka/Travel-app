@@ -2431,19 +2431,18 @@ header .header .contactParts .search a i {
   padding: 40px;
   background-color: rgb(255, 74, 83);
 }
-header .media-part {
+header .toggle-menu {
   display: none;
-  justify-content: end;
   background-color: rgb(75, 75, 75);
   padding: 13px 20px;
 }
-header .media-part .menu {
+header .toggle-menu .menu {
   border-radius: 10px;
   background-color: black;
   padding: 10px 15px;
 }
-header .media-part .menu span,
-header .media-part .menu i {
+header .toggle-menu .menu span,
+header .toggle-menu .menu i {
   color: white;
 }
 
@@ -2490,8 +2489,40 @@ header .media-part .menu i {
     color: rgb(4, 14, 39);
     display: block !important;
   }
-  header .media-part {
+  header .toggle-menu {
     display: flex;
+    flex-direction: column;
+  }
+  header .toggle-menu .menu {
+    align-self: flex-end;
+  }
+  header .toggle-menu .toggle-list {
+    display: none;
+  }
+  header .toggle-menu .toggle-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  header .toggle-menu .toggle-list ul li {
+    position: relative;
+  }
+  header .toggle-menu .toggle-list ul li a {
+    color: white;
+  }
+  header .toggle-menu .toggle-list ul li #blog-toggle-list {
+    display: none;
+    background-color: rgb(75, 75, 75);
+    top: 20px;
+    left: 5px;
+    position: absolute;
+    padding: 10px;
+    z-index: 999;
+  }
+  header .toggle-menu .toggle-list ul li #blog-toggle-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 }
 footer {
