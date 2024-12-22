@@ -51,32 +51,32 @@
           </div>
         </div>
     
-        <div class="toggle-menu">
-          <div class="menu"  onclick="toggleList()">
-            <span>Menu</span>
-            <i class="fa-solid fa-bars"></i>
+        <div class="toggle-menu" id="toggle-menu">
+            <div class="menu">
+              <span>Menu</span>
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="toggle-list"  id="toggle-list" style="background-color: rgb(75, 75, 75);">
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./destination.html">Destination</a></li>
+                <li><a href="">Page</a></li>
+                <li class="blog" style="color: white;">Blog
+                  <div id="blog-toggle-list">
+                    <ul>
+                      <li><a href="./blog.html">Blog</a></li>
+                      <li><a href="./single-blog.html">Single blog</a></li>
+                    </ul>
+      
+                  </div>
+                </a></li>
+                <li id="contact-list"><a href="./contact.html">
+                  Contact
+                </a></li>
+              </ul>
+            </div>
           </div>
-          <div class="toggle-list"  id="toggle-list">
-            <ul>
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./about.html">About</a></li>
-              <li><a href="./destination.html">Destination</a></li>
-              <li><a href="">Page</a></li>
-              <li onclick="blogToggle()" style="color: white;">Blog
-                <div id="blog-toggle-list">
-                  <ul >
-                    <li><a href="./blog.html">Blog</a></li>
-                    <li><a href="./single-blog.html">Single blog</a></li>
-                  </ul>
-    
-                </div>
-              </a></li>
-              <li><a href="./contact.html">
-                Contact
-              </a></li>
-            </ul>
-          </div>
-        </div>
       </header>
 
     <main>
@@ -231,6 +231,8 @@
             </div>
         </div>
     </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>
