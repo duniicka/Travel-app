@@ -46,7 +46,6 @@ header {
                             top: 40px;
                             transition: all .2s;
                             opacity: 0;
-                            z-index: -9999;
                             gap: 10px;
 
                             li {
@@ -133,10 +132,8 @@ header {
 
     .toggle-menu {
         display: none;
-        // justify-content: end;
         background-color: rgb(75, 75, 75);
         padding: 13px 20px;
-
         .menu {
             border-radius: 10px;
             background-color: black;
@@ -226,6 +223,7 @@ header {
         .toggle-menu {
             display: flex;
             flex-direction: column;
+            gap: 20px;
 
             .menu {
                 align-self: flex-end;
@@ -237,10 +235,16 @@ header {
                 ul {
                     display: flex;
                     flex-direction: column;
+                    position: relative;
                     gap: 15px;
 
                     li {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
                         position: relative;
+                        padding: 5px;
+                        border-radius: 5px;
 
                         a {
                             color: white;
@@ -248,18 +252,29 @@ header {
 
                         #blog-toggle-list {
                             display: none;
+                            box-shadow: rgba(149, 157, 165, 0.067) 0px 8px 5px;
                             background-color: rgb(75, 75, 75);
-                            top: 20px;
-                            left: 5px;
+                            top: 100%;
+                            right: 0;
                             position: absolute;
                             padding: 10px;
                             z-index: 999;
-
+                            width: 80%;
+                            height: 100px;
                             ul {
                                 display: flex;
                                 flex-direction: column;
                                 gap: 20px;
                             }
+
+                            &.active #contact-list {
+                                position: absolute;
+                                top: 240px;
+                            }
+                        }
+
+                        &:active {
+                            background-color: rgb(204,204,204);
                         }
                     }
                 }

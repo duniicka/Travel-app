@@ -1594,6 +1594,7 @@ main .padding {
 .btn-bg-aqua {
   border: none;
   padding: 15px;
+  border-radius: 3px;
   cursor: pointer;
   background-color: rgb(32, 198, 182);
   color: white;
@@ -2371,7 +2372,6 @@ header .header .nav-part nav ul li .dropdown {
   top: 40px;
   transition: all 0.2s;
   opacity: 0;
-  z-index: -9999;
   gap: 10px;
 }
 header .header .nav-part nav ul li .dropdown li {
@@ -2492,6 +2492,7 @@ header .toggle-menu .menu i {
   header .toggle-menu {
     display: flex;
     flex-direction: column;
+    gap: 20px;
   }
   header .toggle-menu .menu {
     align-self: flex-end;
@@ -2502,27 +2503,43 @@ header .toggle-menu .menu i {
   header .toggle-menu .toggle-list ul {
     display: flex;
     flex-direction: column;
+    position: relative;
     gap: 15px;
   }
   header .toggle-menu .toggle-list ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     position: relative;
+    padding: 5px;
+    border-radius: 5px;
   }
   header .toggle-menu .toggle-list ul li a {
     color: white;
   }
   header .toggle-menu .toggle-list ul li #blog-toggle-list {
     display: none;
+    box-shadow: rgba(149, 157, 165, 0.067) 0px 8px 5px;
     background-color: rgb(75, 75, 75);
-    top: 20px;
-    left: 5px;
+    top: 100%;
+    right: 0;
     position: absolute;
     padding: 10px;
     z-index: 999;
+    width: 80%;
+    height: 100px;
   }
   header .toggle-menu .toggle-list ul li #blog-toggle-list ul {
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+  header .toggle-menu .toggle-list ul li #blog-toggle-list.active #contact-list {
+    position: absolute;
+    top: 240px;
+  }
+  header .toggle-menu .toggle-list ul li:active {
+    background-color: rgb(204, 204, 204);
   }
 }
 footer {
