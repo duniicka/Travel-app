@@ -7,8 +7,8 @@ export default defineConfig({
                 contact: "contact.html",
                 destination: "destination.html",
                 blog: "blog.html",
-                singleblog: "singleblog.html",
                 main: "index.html",
+                singleblog: "singleblog.html",
             }
         }
     }
