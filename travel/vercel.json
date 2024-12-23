@@ -4,7 +4,7 @@
         {"source": "/contact", "destination": "/contact.html"},
         {"source": "/destination", "destination": "/destination.html"},
         {"source": "/blog", "destination": "/blog.html"},
-        {"source": "/singleblog", "destination": "/singleb  log.html"},
         {"source": "/", "destination": "/index.html"},
+        {"source": "/singleblog", "destination": "/singleb  log.html"}
     ]
 }
