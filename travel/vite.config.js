@@ -8,7 +8,7 @@ export default defineConfig({
                 destination: "destination.html",
                 blog: "blog.html",
                 singleblog: "singleblog.html",
-                main: "index.html",
+                main: "index.html"
             }
         }
     }
