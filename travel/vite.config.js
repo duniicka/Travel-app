@@ -3,12 +3,12 @@ export default defineConfig({
     build: {
         rollupOptions: {
             input: {
-                main: "index.html",
-                contact: "contact.html",
                 about: "about.html",
-                singleblog: "singleblog.html",
+                contact: "contact.html",
+                destination: "destination.blog",
                 blog: "blog.html",
-                destination: "destination.blog"
+                singleblog: "singleblog.html",
+                main: "index.html",
             }
         }
     }
