@@ -6,7 +6,7 @@ export default defineConfig({
                 main: "index.html",
                 contact: "contact.html",
                 about: "about.html",
-                singleblog: "single-blog.html",
+                singleblog: "singleblog.html",
                 blog: "blog.html",
                 destination: "destination.blog"
             }
