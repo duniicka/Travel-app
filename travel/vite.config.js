@@ -9,6 +9,8 @@ export default defineConfig({
                 blog: "blog.html",
                 main: "index.html",
                 singleblog: "singleblog.html",
+                singleblog: "singleblog.html",
+                main: "index.html"
             }
         }
     }
